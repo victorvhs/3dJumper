@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Spatial.gd" type="Script" id=1]
-[ext_resource path="res://Crate.tscn" type="PackedScene" id=2]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 10, 10 )
@@ -24,18 +23,6 @@ material/0 = SubResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground"]
 shape = SubResource( 3 )
-
-[node name="Crate" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.266539, 0 )
-
-[node name="Crate2" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.770102, 0.288453 )
-
-[node name="Crate3" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.27933, 0 )
-
-[node name="Crate4" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00142527, 1.77175, 0.0134189 )
 
 [node name="CameraHub" type="Spatial" parent="."]
 
