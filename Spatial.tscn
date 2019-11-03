@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Spatial.gd" type="Script" id=1]
 [ext_resource path="res://plataform_objects/BlockLarge.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://plataform_objects/BlockSlope.tscn" type="PackedScene" id=4]
 [ext_resource path="res://plataform_objects/BlockBump.tscn" type="PackedScene" id=5]
 [ext_resource path="res://plataform_objects/blockCliff.tscn" type="PackedScene" id=6]
+[ext_resource path="res://plataform_objects/Character.tscn" type="PackedScene" id=7]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 10, 10 )
@@ -32,7 +33,7 @@ shape = SubResource( 3 )
 [node name="CameraHub" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="CameraHub"]
-transform = Transform( 1, 0, 0, 0, 0.929477, 0.368879, 0, -0.368879, 0.929477, 0.07836, 3.51835, 4.04798 )
+transform = Transform( 1, 0, 0, 0, 0.929477, 0.368879, 0, -0.368879, 0.929477, 0.07836, 3.51835, 7.04798 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.252045, 0.967716, 0, -0.967716, -0.252045, 0, 7.4004, 0 )
@@ -48,6 +49,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0128734, 0, -0.00716066 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51287, 0, -6.50716 )
 
 [node name="wolrd" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="BlockLarge2" parent="wolrd" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
@@ -81,3 +83,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86215, -0.00927758, -10.2164
 
 [node name="BlockBump3" parent="wolrd" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.13785, -0.00927758, -10.2164 )
+
+[node name="Character" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4, 0.254628, 0 )
