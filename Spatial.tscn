@@ -49,7 +49,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0128734, 0, -0.00716066 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51287, 0, -6.50716 )
 
 [node name="wolrd" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="BlockLarge2" parent="wolrd" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
@@ -68,6 +67,9 @@ transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.5594
 
 [node name="BlockSlope" parent="wolrd" instance=ExtResource( 4 )]
 transform = Transform( -1, 8.74228e-08, 0, -7.38395e-09, -0.0844625, -0.996427, -8.71104e-08, -0.996427, 0.0844625, -0.538122, 0.0634152, -4.02036 )
+
+[node name="BlockSlope2" parent="wolrd" instance=ExtResource( 4 )]
+transform = Transform( -1, 8.74228e-08, 0, 6.60631e-08, 0.755674, -0.654948, -5.72574e-08, -0.654948, -0.755674, -0.538122, -0.366958, -5.79931 )
 
 [node name="BlockSlopeHalf2" parent="wolrd" instance=ExtResource( 3 )]
 transform = Transform( -1, 0, 2.98023e-07, 0, 1, 0, -2.98023e-07, 0, -1, -0.5, 0.0436942, 2.98542 )
